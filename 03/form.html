@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week"> -->
+    <h1>Forms</h1>
+    <p><h2>Button</h2></p>
+
+    <input type="button" 
+    onclick="alert('Form Button')"
+    value="Click Me!">
+    <hr>
+
+    <h2>Checkbox</h2>
+    <form action="">
+        <input type="checkbox" id="car brands1" name="car brands1" value="Ford">
+        <label for="car brands1">I like a Ford</label>
+        <br> 
+        <input type="checkbox" id="car brands2" name="car brands2" value="BMW">
+        <label for="car brands1">I like a BMW</label> 
+        <br>
+        <input type="checkbox" id="car brands3" name="car brands3" value="Volvo">
+        <label for="car brands1">I like a Volvo</label>
+        <br>
+        <br> 
+        <input type="submit" value="choose">
+        <hr>
+    </form>   
+
+    <h2>Color</h2>
+    <form> 
+        <input type="color" id="color1" name="color1" value="#ffff00">
+        <input type="submit" value="choose">
+        <hr>
+    </form>   
+
+    <h2>Date</h2>
+    <form action="">
+        <label for="Birthday">Employee's birthday:</label>
+        <input type="date" id="Birthday" name="Birthday">
+        <input type="submit" value="choose">
+        <hr>
+    </form>
+
+    <h2>Datetime-local</h2>
+    <form action="">
+        <label for="Birthday-time">Employee's birthday:</label>
+        <input type="datetime-local" id="Birthday-time" name="Birthday-time">
+        <input type="submit" value="choose">
+        <hr>
+    </form>
+
+    <h2>Email</h2>
+    <form action="">
+        <label for="mail">Your email:</label>
+        <input placeholder="mishamamelin@gmail.com" type="email" id="mail" name="mail">
+        <input type="submit" value="choose">
+        <hr>
+    </form>
+
+    <h2>File</h2>
+    <form action="">
+        <label for="myfile">Your email:</label>
+        <input type="file" id="myfile" name="myfile">
+        <input type="submit" value="choose">
+        <hr>
+    </form>
+
+    <h2>Hidden</h2>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        <input type="hidden" id="name" name="name">
+        <input type="submit" value="choose"> 
+        <hr>
+    </form>
+
+    <h2>Image</h2>
+    <form action="">
+        <label for=""></label>
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <br>
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <br>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+        <hr>
+    </form>
+
+    <h2>Month</h2>
+    <form action="">
+        <label for="Birthday-time">Employee's birthday:</label>
+        <input type="month" id="Birthday-time" name="Birthday-time">
+        <input type="submit" value="choose">
+        <hr>
+   </form>
+
+   <h2>Number</h2>
+   <form action="">
+        <label for="Page numbering">Page numbering (1 and 465):</label>
+        <input type="number" id="Page numbering" name="Page numbering" min="1" max="465" value="1">
+        <input type="submit" value="choose">
+        <hr>
+   </form>
+
+   <h2>Password</h2>
+   <form action="">
+        <label for="username">Username:</label><br>
+        <input placeholder="Misha" type="text" id="username" name="username">
+        <br>
+        <br>
+        <label for="Password">Password:</label><br>
+        <input placeholder="******" type="password" id="pwd" name="pwd">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <hr>
+   </form>
+
+   <h2>Radio</h2>
+   <form action="">
+        <label for="html">HTML</label>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <br>
+        <label for="css">CSS</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <br>
+        <label for="javascript">JavaScript</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <hr>
+   </form>
+
+   <h2>Range</h2>
+   <form action="">
+        <label for="vol">Volume 0 and 100:</label>
+        <br>
+        <br>
+        <input type="range" id="vol" name="vol" min="0" max="100">
+        <br> 
+        <br>
+        <input type="submit" value="Submit">
+        <hr>
+   </form>
+
+   <h2>Reset</h2>
+   <form action="">
+        <label for="fname">First name:</label>
+        <br>
+        <input type="text" id="fname" name="fname" value="John">
+        <br>
+        <label for="lname">Last name:</label>
+        <br>
+        <input type="text" id="lname" name="lname" value="Doe">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <hr>
+    </form>
+
+    <h2>Search</h2>
+    <form action="">
+        <label for="gsearch">Search Bing:</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit" value="Submit">
+        <hr>
+    </form>
+
+    <h2>Submit</h2>
+    <form action="">
+        <input type="submit" value="Submit">
+        <hr>
+    </form>
+
+    <h2>Tel</h2>
+    <form action="">
+        <label for="phone">A phone number:</label>
+        <br>
+        <br>
+        <input type="tel" id="phone" name="phone" placeholder="+380-000-000-000" required>
+        <br>
+        <br>
+        <small>Format: +380-957-622-160</small>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <hr>
+    </form>
+
+    <h2>Text</h2>
+    <form action="">
+        <label for="fname">First name:</label>
+        <br>
+        <input type="text" id="firstname" name="firstname">
+        <br>
+        <label for="lname">Last name:</label>
+        <br>
+        <input type="text" id="lastname" name="lastname">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <hr>
+    </form>
+
+    <h2>Time</h2>
+    <form action="">
+        <label for="time">A time:</label>
+        <input type="time" id="time" name="time">
+        <input type="submit" value="Submit">
+        <hr>
+    </form>
+
+    <h2>Url</h2>
+    <form action="">
+        <label for="homepage">Your homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+        <input type="submit" value="Submit">
+        <hr>
+    </form>
+
+    <h2>Week</h2>
+    <form action="">
+        <label for="week">A week:</label>
+        <input type="week" id="week" name="week">
+        <input type="submit" value="Submit">
+        <hr>
+    </form>
+</body>
+</html>
