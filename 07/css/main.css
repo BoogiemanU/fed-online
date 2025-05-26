@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color--gray: #E5E5E5;
+}
+
+.back{
+    background-color: var(--color--gray);
+}
+
+.container{
+    position: relative;
+    width: 1368px;
+    height: 1323px;
+}
+
+.card{
+    position: absolute;
+}
+
+.card:nth-of-type(1){
+    top: 0; /* відступ від верху 0 */
+    left: 0; /* відступ зліва 0 */
+}
+
+.card:nth-of-type(2){
+    top: 50%; 
+    left: 50%;
+    transform:translate(-50%, -50%);
+    z-index: 1;
+}
+
+.card:nth-of-type(3){
+    bottom: 0; /* відступ знизу 0 */
+    right: 0; /* відступ праворуч 0 */
+}

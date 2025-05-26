@@ -63,28 +63,3 @@ ul li {
 li {
     line-height: normal;
 }
-
-:root {
-    --color--pink: #F7B3B3;
-    --color--white: #FFFFFF;
-
-}
-
-body {
-    background-color: var(--color--pink);
-   
-}
-
-main {
-    background-color: var(--color--white);
-    width: 360px;
-    margin: 100px auto;
-    border-radius: 20px;
-    padding: 56px 20px 91px 20px;
-}
-
-form{
-    background-color: #F7B3B3;
-
-
-}
