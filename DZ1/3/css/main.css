@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: normal;
+    font-size: 16px;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+input, textarea, select, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    line-height: normal;
+}
+
+@font-face {
+    font-family: Philosopher;
+    font-display: swap;
+    src: url(../fonts/PhilosopherBold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: UbuntuSans;
+    font-display: swap;
+    src: url(..//fonts/UbuntuSansBold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: UbuntuSans;
+    font-display: swap;
+    src: url(..//fonts/UbuntuSansMedium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+:root{
+    --color--black: #1A1A1A;
+    --color--orange: #FF8400;
+    --color--white: #FFF;
+    --color--grey: #424242;
+}
+
+.stomat{
+    display: grid;
+    width: 1440px;
+    height: 582px;
+    padding: 64px 120px;
+    gap: 64px;
+    margin: 0 auto;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.stomat__hat{
+    display: flex;
+    width: 909px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.stomat__hat-asking{
+    background-color: var(--color--orange);
+    color: var(--color--white);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-family: UbuntuSans;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.stomat__hat-title{
+    color: var(--color--black);
+    font-family: Philosopher;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    align-self: stretch;
+    }
+
+.stomat__hat-text{
+    color: var(--color--black);
+    font-family: UbuntuSans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.stomat_down{
+    display: flex;
+    gap: 20px;
+}
+
+.stomat__down-one{
+    display: flex;
+    gap: 64px;
+    width: 50%;
+    padding: 32px;
+    background-color: var(--color--black);
+    border-radius: 12px;
+    color: var(--color--white);
+    align-items: center;
+}
+
+.stomat__down-text{
+    font-family: UbuntuSans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.plan{
+    display: flex;
+    width: 1440px;
+    padding: 80px 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    background-color: var(--color--black);
+    margin: 0 auto;
+
+}
+
+.plan__hat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.plan__hat-present{
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color--white);
+    background-color: var(--color--orange);
+    border-radius: 30px;
+    font-family: UbuntuSans;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.plan__hat-title{
+    color: var(--color--white);
+    font-family: Philosopher;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.plan__bloc{
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.plan__bloc__one{
+    display: grid;
+    gap: 24px;
+}
+
+.plan__bloc__one-top{
+    display: flex;
+    height: 217px;
+    padding: 10px 16px;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color--grey);
+    background: #252525;
+}
+
+.plan__bloc__one-bot{
+    display: flex;
+    height: 217px;
+    padding: 10px 16px;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color--grey);
+    background: #252525;
+}
+
+.plan__bloc__two{
+    display: grid;
+    gap: 24px;
+}
+
+.plan__bloc__two-top{
+    display: flex;
+    height: 217px;
+    padding: 10px 16px;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color--grey);
+    background: #252525;
+}
+.plan__bloc__two-bot{
+    display: flex;
+    height: 217px;
+    padding: 10px 16px;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color--grey);
+    background: #252525;
+}
+
+.plan__bloc-text{
+    color: var(--color--white);
+    font-family: UbuntuSans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 278px;
+}
+
+
+
+
+
+
+
+
+
+
