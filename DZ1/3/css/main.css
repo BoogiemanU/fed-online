@@ -1,8 +1,4 @@
 *{
-    box-sizing: border-box;
-}
-
-*{
     padding: 0;
     margin: 0;
     border: 0;
@@ -80,7 +76,7 @@ li {
 @font-face {
     font-family: UbuntuSans;
     font-display: swap;
-    src: url(..//fonts/UbuntuSansBold.woff2) format('woff2');
+    src: url(../fonts/UbuntuSansBold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
     font-optical-sizing: auto;
@@ -89,7 +85,7 @@ li {
 @font-face {
     font-family: UbuntuSans;
     font-display: swap;
-    src: url(..//fonts/UbuntuSansMedium.woff2) format('woff2');
+    src: url(../fonts/UbuntuSansMedium.woff2) format('woff2');
     font-weight: 500;
     font-style: normal;
     font-optical-sizing: auto;
@@ -100,17 +96,19 @@ li {
     --color--orange: #FF8400;
     --color--white: #FFF;
     --color--grey: #424242;
+    --color-blackblack: #252525;
+}
+
+.fon{
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .stomat{
     display: grid;
-    width: 1440px;
     height: 582px;
     padding: 64px 120px;
     gap: 64px;
-    margin: 0 auto;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .stomat__hat{
@@ -129,27 +127,21 @@ li {
     font-family: UbuntuSans;
     font-weight: 700;
     font-size: 20px;
-    font-style: normal;
 }
 
 .stomat__hat-title{
     color: var(--color--black);
     font-family: Philosopher;
     font-size: 56px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-transform: uppercase;
-    align-self: stretch;
     }
 
 .stomat__hat-text{
     color: var(--color--black);
     font-family: UbuntuSans;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
 .stomat_down{
@@ -171,14 +163,11 @@ li {
 .stomat__down-text{
     font-family: UbuntuSans;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
 .plan{
     display: flex;
-    width: 1440px;
     padding: 80px 120px;
     flex-direction: column;
     align-items: flex-start;
@@ -206,16 +195,13 @@ li {
     font-family: UbuntuSans;
     font-weight: 700;
     font-size: 20px;
-    font-style: normal;
 }
 
 .plan__hat-title{
     color: var(--color--white);
     font-family: Philosopher;
     font-size: 56px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-transform: uppercase;
 
 }
@@ -224,7 +210,6 @@ li {
     display: flex;
     align-items: flex-start;
     gap: 48px;
-    align-self: stretch;
 }
 
 .plan__bloc__one{
@@ -242,7 +227,7 @@ li {
     border-radius: 10px;
     border-radius: 10px;
     border: 1px solid var(--color--grey);
-    background: #252525;
+    background: var(--color-blackblack);
 }
 
 .plan__bloc__one-bot{
@@ -255,7 +240,7 @@ li {
     border-radius: 10px;
     border-radius: 10px;
     border: 1px solid var(--color--grey);
-    background: #252525;
+    background: var(--color-blackblack);
 }
 
 .plan__bloc__two{
@@ -273,7 +258,7 @@ li {
     border-radius: 10px;
     border-radius: 10px;
     border: 1px solid var(--color--grey);
-    background: #252525;
+    background: var(--color-blackblack);
 }
 .plan__bloc__two-bot{
     display: flex;
@@ -285,7 +270,7 @@ li {
     border-radius: 10px;
     border-radius: 10px;
     border: 1px solid var(--color--grey);
-    background: #252525;
+    background: var(--color-blackblack);
 }
 
 .plan__bloc-text{
