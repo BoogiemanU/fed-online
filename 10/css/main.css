@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: normal;
+    font-size: 16px;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+input, textarea, select, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    line-height: normal;
+}
+
+@font-face {
+    font-family: Inter;
+    font-display: swap;
+    src: url(../fonts/InterExtraBold.woff2) format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: Inter;
+    font-display: swap;
+    src: url(../fonts/InterMedium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: Inter;
+    font-display: swap;
+    src: url(../fonts/InterRegular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: KyivTypeTitling;
+    font-display: swap;
+    src: url(../fonts/KyivTypeTitlingMedium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+:root{
+    --color--text-gray-one: #C8C8C8;
+    --color--svg-white: #FFF;
+    --color--text-gray-two: #A7A6A6;
+    --color--red: #D40D1F;
+}
+
+.header{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    width: calc(100% - 80px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.header__sec-one{
+    display: flex;
+    gap: 82px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__sec-one-date{
+    color: var(--color--text-gray-one);
+    font-family: KyivTypeTitling;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header__sec-one-date::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 3px;
+    display: block;
+    background-color: var(--color--svg-white);
+    left: 212px; 
+}
+
+.header__sec-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.section__one{
+    background-image: url("../img/Back.webp");
+    width: 100%;
+    min-height: 1117px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 235px 40px 50px 40px;
+    position: relative;
+}
+
+.section__one-info{
+    display: grid;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.section__one-info-genre{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+}
+
+.section__one-info-genre-drama, .section__one-info-genre-thriller, .section__one-info-genre-supernatural{
+    color: var(--color--svg-white);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.section__one-info-genre-drama::before{
+    content: '';
+    position: absolute;
+    height: 36px;
+    width: 3px;
+    display: block;
+    background-color: var(--color--svg-white);
+    left: 160px;
+}
+
+.section__one-info-genre-thriller::before{
+    content: '';
+    position: absolute;
+    height: 36px;
+    width: 3px;
+    display: block;
+    background-color: var(--color--svg-white);
+    left: 304px;
+}
+
+.section__one-info-title{
+    color: var(--color--svg-white);
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 3.52px;
+}
+
+.section__one-info-datate{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 48px;
+}
+
+.section__one-info-datate-date{
+    color: var(--color--svg-white);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.section__one-info-datate-director, .section__one-info-datate-seasons{
+    color: var(--color--svg-white);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.section__one-info-datate-director-name, .section__one-info-datate-seasons-episode{
+    color: var(--color--text-gray-two);
+    font-family: Inter;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.section__one-info-datate-date::before{
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 3px;
+    display: block;
+    background-color: var(--color--svg-white);
+    left: 130px;
+}
+
+.section__one-info-datate-director::before{
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 3px;
+    display: block;
+    background-color: var(--color--svg-white);
+    left: 510px;
+}
+
+.section__one-info-description{
+    color: var(--color--text-gray-two);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.965px;
+}
+
+.section__one-evaluation{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 55px;
+}
+
+.section__one-show{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 90px;
+    margin-bottom: 55px;
+}
+
+.section__one-show-episodes{
+    padding: 16px 58px 16px 58px;
+    border-radius: 10px;
+    border: 3px solid var(--color--svg-white);
+    color: var(--color--svg-white);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 31.135px;
+    text-transform: uppercase;
+}
+
+.section__one-show-episodes:hover{
+    background-color: var(--color--red);
+}
+
+.section__one-show-stream{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: var(--color--text-gray-one);
+    width: 272px;
+    height: 62px;
+    border-radius: 10px;
+}
+
+.section__one-show-stream-now{
+    color: var(--color--svg-white);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 31.135px;
+    text-transform: uppercase;
+}
+
+.section__one-show-stream:hover{
+    background-color: var(--color--red);
+}
+
+.section__one-slider{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 580px;
+    margin-bottom: 32px;
+}
+
+.section__one-slider-name{
+    color: var(--color--svg-white);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 31.795px;
+    letter-spacing: 2.97px;
+    text-transform: uppercase;
+}
+
+.section__one-slider-scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.section__one-slider-scroll-left{
+    border: 2px solid var(--color--text-gray-two);
+    border-radius: 50%;
+}
+
+.section__one-slider-scroll-right{
+    border: 2px solid var(--color--svg-white);
+    border-radius: 50%;
+}
+
+.section__one-list{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+}
+
+.section__one-limitations{
+    position: absolute;
+    right: 0;
+    bottom: 103px;
+    color: var(--color--svg-white);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.965px;
+    padding: 16px 58px 16px 26px;
+    background-color: rgba(255, 255, 255, 0.49);
+    border-left: 33px;
+    border-color: var(--color--red);
+    display: block;
+    border-style: solid;
+}
+
+
