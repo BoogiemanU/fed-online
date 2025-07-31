@@ -4,8 +4,8 @@
 
 // Виведіть результат за допомогою alert, щоб повідомити користувача про те, чи рівні числа.
 
-let number1 = Number(prompt('Type first number', ''));;
-let number2 = Number((prompt('Type second number', '')));
+let number1 = Number(prompt('Type first number', ''));
+let number2 = Number(prompt('Type second number', ''));
 
 alert(number1 === number2 ? 'Numbers are equals' : 'numbers are not equal');
 
